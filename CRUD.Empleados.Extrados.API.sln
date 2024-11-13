@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD.Empleados.Extrados.API", "CRUD.Empleados.Extrados.API\CRUD.Empleados.Extrados.API.csproj", "{4034641B-2B98-401D-B32F-0887086CC932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Empleados.Extrados.API", "CRUD.Empleados.Extrados.API\CRUD.Empleados.Extrados.API.csproj", "{4034641B-2B98-401D-B32F-0887086CC932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD.Empleados.Extrados.Data", "CRUD.Empleados.Extrados.Data\CRUD.Empleados.Extrados.Data.csproj", "{DB290DE5-601F-4004-93FD-F2E270051DCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Empleados.Extrados.Data", "CRUD.Empleados.Extrados.Data\CRUD.Empleados.Extrados.Data.csproj", "{DB290DE5-601F-4004-93FD-F2E270051DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD.Empleados.Extrados.Services", "CRUD.Empleados.Extrados.Services\CRUD.Empleados.Extrados.Services.csproj", "{C87D3A5B-C68C-4DC1-A935-67DF31E252F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Empleados.Extrados.Services", "CRUD.Empleados.Extrados.Services\CRUD.Empleados.Extrados.Services.csproj", "{C87D3A5B-C68C-4DC1-A935-67DF31E252F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD.Empleados.Extrados.Entities", "CRUD.Empleados.Extrados.Entities\CRUD.Empleados.Extrados.Entities.csproj", "{1C0FB507-4C4B-47A8-B11A-0D60107B5AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Empleados.Extrados.Entities", "CRUD.Empleados.Extrados.Entities\CRUD.Empleados.Extrados.Entities.csproj", "{1C0FB507-4C4B-47A8-B11A-0D60107B5AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD.Empleados.Extrados.Common", "CRUD.Empleados.Extrados.Common\CRUD.Empleados.Extrados.Common.csproj", "{6ADF88F3-EE2D-4DF5-BB72-C263695BF902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Empleados.Extrados.Common", "CRUD.Empleados.Extrados.Common\CRUD.Empleados.Extrados.Common.csproj", "{6ADF88F3-EE2D-4DF5-BB72-C263695BF902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurations", "Configurations\Configurations.csproj", "{A54B5DB6-229E-438D-ADE2-A6E037763030}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6ADF88F3-EE2D-4DF5-BB72-C263695BF902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADF88F3-EE2D-4DF5-BB72-C263695BF902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADF88F3-EE2D-4DF5-BB72-C263695BF902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54B5DB6-229E-438D-ADE2-A6E037763030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54B5DB6-229E-438D-ADE2-A6E037763030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54B5DB6-229E-438D-ADE2-A6E037763030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54B5DB6-229E-438D-ADE2-A6E037763030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

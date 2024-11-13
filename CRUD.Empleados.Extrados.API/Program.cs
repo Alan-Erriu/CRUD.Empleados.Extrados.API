@@ -1,12 +1,25 @@
+using Configurations;
+using CRUD.Empleados.Extrados.Data.Implementations;
+using CRUD.Empleados.Extrados.Data.Interfaces;
+using CRUD.Empleados.Extrados.Services.Implementations;
+using CRUD.Empleados.Extrados.Services.Interfaces;
+using PlanItUp.API.Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+//---------config----------------//
+builder.Services.Configure<SQLServerConfig>(builder.Configuration.GetSection("DBTestConnection"));
+//---------dependenciesDATA---------//
+builder.Services.AddScoped<IAuthDAO, AuthDAO>();
+//---------dependenciesServices-----//
+builder.Services.AddScoped<IAuthServices, AuthServices>();
+//---------endDpendencies-----------//
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,6 +32,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalErrorHandlingMiddleware>();
 
 app.MapControllers();
 

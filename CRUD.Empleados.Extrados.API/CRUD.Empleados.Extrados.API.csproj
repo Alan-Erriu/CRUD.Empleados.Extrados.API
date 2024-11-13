@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Configurations\Configurations.csproj" />
+    <ProjectReference Include="..\CRUD.Empleados.Extrados.Common\CRUD.Empleados.Extrados.Common.csproj" />
     <ProjectReference Include="..\CRUD.Empleados.Extrados.Data\CRUD.Empleados.Extrados.Data.csproj" />
     <ProjectReference Include="..\CRUD.Empleados.Extrados.Services\CRUD.Empleados.Extrados.Services.csproj" />
   </ItemGroup>
