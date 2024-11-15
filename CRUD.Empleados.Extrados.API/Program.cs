@@ -17,8 +17,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<SQLServerConfig>(builder.Configuration.GetSection("DBTestConnection"));
 //---------dependenciesDATA---------//
 builder.Services.AddScoped<IAuthDAO, AuthDAO>();
+builder.Services.AddScoped<IEmployeeDAO, EmployeeDAO>();
+builder.Services.AddScoped<IPositionDAO, PositionDAO>();
 //---------dependenciesServices-----//
 builder.Services.AddScoped<IAuthServices, AuthServices>();
+builder.Services.AddScoped<IEmployeeServices, EmployeeServices>();
+builder.Services.AddScoped<IPositionServices, PositionServices>();
 //---------endDpendencies-----------//
 var app = builder.Build();
 

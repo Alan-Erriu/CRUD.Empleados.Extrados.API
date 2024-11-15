@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD.Empleados.Extrados.API.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -15,9 +16,10 @@ namespace CRUD.Empleados.Extrados.API.Controllers
             _authServices = authServices;
         }
 
-
+        /// <summary>
+        ///  ingresar usuario y  contraseña, de ser credenciales validas se retornara un el email
+        /// </summary>
         [HttpPost("login")]
-
         public async Task<IActionResult> Login([FromBody] LoginRequest credentials)
         {
 

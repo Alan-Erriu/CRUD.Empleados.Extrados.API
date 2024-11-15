@@ -1,6 +1,6 @@
 ﻿using Configurations;
 using CRUD.Empleados.Extrados.Data.Interfaces;
-using CRUD.Empleados.Extrados.Entities;
+using CRUD.Empleados.Extrados.Entities.Models;
 using Dapper;
 using Microsoft.Extensions.Options;
 using System.Data.SqlClient;

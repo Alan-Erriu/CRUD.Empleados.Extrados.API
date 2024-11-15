@@ -1,4 +1,4 @@
-﻿namespace CRUD.Empleados.Extrados.Entities
+﻿namespace CRUD.Empleados.Extrados.Entities.Models
 {
     public class Client
     {

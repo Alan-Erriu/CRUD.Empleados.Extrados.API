@@ -2,8 +2,8 @@
 
 namespace CRUD.Empleados.Extrados.Data.Interfaces
 {
-    public interface IAuthDAO
+    public interface IPositionDAO
     {
-        Task<Client?> Login(string email);
+        Task<List<Position>> GetAllPosition();
     }
 }
